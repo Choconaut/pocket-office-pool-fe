@@ -1,4 +1,4 @@
-.btn {
+.loginBtn {
     background-color: #35529a;
     color: white;
     padding: 14px 20px;
@@ -9,6 +9,6 @@
     opacity: 0.9;
 }
 
-.btn-hover {
-    background-color: #45a049;
+.loginBtn:hover {
+    background-color: #5673BF;
 }

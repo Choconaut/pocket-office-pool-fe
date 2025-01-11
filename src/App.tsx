@@ -1,10 +1,11 @@
-import LoginView from "./views/loginview/LoginView";
+import React from "react";
 import './/App.css';
+import Routes from "./Routes";
 
-function App() {
+const App: React.FC = () => {
     return (
-        <div className="m-4 app-container">
-            <LoginView />
+        <div>
+            <Routes />
         </div>
     );
 }
