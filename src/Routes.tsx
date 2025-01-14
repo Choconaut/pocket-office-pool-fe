@@ -2,6 +2,8 @@ import React from "react";
 import { Route, Routes as RouterRoutes } from 'react-router-dom';
 import LoginView from "./views/loginview/LoginView";
 import HomeView from "./views/HomeView/HomeView";
+import Pools from "./components/pools/Pools";
+import Picks from "./components/picks/Picks";
 
 type RouteType = {
     path: string;
@@ -13,7 +15,7 @@ const routes: RouteType[] = [
     { path: '/home', component: <HomeView /> },
 ];
 
-const Routes: React.FC = () => {
+const Routes = () => {
     return (
         <RouterRoutes>
             {routes.map((route, index) => (
