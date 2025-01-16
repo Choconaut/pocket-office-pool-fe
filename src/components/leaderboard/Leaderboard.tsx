@@ -1,3 +1,4 @@
+import { Container, Spinner } from "react-bootstrap";
 import React, { useEffect, useState } from "react";
 import styles from './Leaderboard.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -52,9 +53,11 @@ const Leaderboard: React.FC = () => {
 
     if (loading) {
         return (
-            <div className={`${styles.leaderboard} vh-100`}>
-                <div className={styles.loadingSpinner}></div>
-            </div>
+            <Container className={`${styles.leaderboard} vh-100 d-flex justify-content-center align-items-center`}>
+                <Spinner animation="border" role="status" variant="primary">
+                    <span className="visually-hidden">Loading...</span>
+                </Spinner>
+            </Container>
         );
     }
 

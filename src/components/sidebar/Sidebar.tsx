@@ -29,7 +29,8 @@ const Sidebar: React.FC<SidebarProps> = ({ activeTab, onSelect, handleLogout }) 
                 {/* Toggle Button for Small Screens */}
                 <Button
                     variant="primary"
-                    className="d-md-none position-absolute bg-transparent border-0 text-dark"
+                    size="lg"
+                    className="d-md-none position-absolute bg-transparent border-0 text-dark m-2"
                     onClick={handleShow}
                     aria-label="Open Sidebar"
                 >
@@ -72,7 +73,7 @@ const SidebarContent: React.FC<SidebarContentProps> = ({ activeTab, onSelect, ha
     return (
         <ul className="nav flex-column">
             <li className="nav-item mb-3">
-                <small className="text-muted">Pool Settings</small>
+                <small className="text-muted">Pool</small>
                 {/* Pools */}
                 <Button
                     variant={activeTab === 'mypools' ? 'secondary' : ''}

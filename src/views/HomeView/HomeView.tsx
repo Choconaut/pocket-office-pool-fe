@@ -8,7 +8,7 @@ import Support from "../../components/help-support/Support";
 import Settings from "../../components/settings/Settings";
 
 const HomeView: React.FC = () => {
-    const [activeTab, setActiveTab] = useState<string>('leaderboard');
+    const [activeTab, setActiveTab] = useState<string>('mypools');
 
     useEffect(() => {
         const savedTab = localStorage.getItem('activeTab');
